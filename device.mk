@@ -292,8 +292,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
-    $(call soong_config_set_bool,stagefright,target_use_legacy_mediacodecbuffer_setrange,true)
-    $(call soong_config_set_bool,stagefright,target_restore_surface_generation_after_reconnect,true)
+
+$(call soong_config_set_bool,stagefright,target_use_legacy_mediacodecbuf_setrange,true)
+$(call soong_config_set_bool,stagefright,target_restore_surface_generation_after_reconnect,true)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # NFC
 PRODUCT_PACKAGES += \
