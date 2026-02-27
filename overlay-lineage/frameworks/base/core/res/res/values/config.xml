@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Enable app cloning backend -->
+    <string-array name="global_device_configs_override">
+        <item>app_cloning/cloned_apps_enabled=true</item>
+        <item>app_cloning/delete_all_app_clones_enabled=true</item>
+        <item>app_cloning/enable_app_cloning_building_blocks=true</item>
+    </string-array>
+
+    <!-- Required for DeviceConfig overrides to apply -->
+    <string name="config_deviceConfiguratorPackageName" translatable="false">
+        org.protonaosp.deviceconfig
+    </string>
+</resources>
