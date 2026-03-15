@@ -24,7 +24,7 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, vendor/pixelos/pixel-clocks/products/clocks.mk)
 
 # Product Specifics
-PRODUCT_NAME := custom_spes
+PRODUCT_NAME := Lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11

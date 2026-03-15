@@ -481,5 +481,8 @@ $(call inherit-product, vendor/pixelos/pixel-clocks/common/common-vendor.mk)
 PRODUCT_PACKAGES += \
     SystemUIResPixelClocks
 
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # XiaomiParts
 include packages/apps/XiaomiParts/device.mk

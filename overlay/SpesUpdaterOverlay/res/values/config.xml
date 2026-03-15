@@ -17,7 +17,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/knyplaygrnd/PixelOS-OTA/sixteen/spes.json</string>
-    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/knyplaygrnd/PixelOS-OTA/sixteen/spes.md</string>
-    <string name="certified_prop_url" translatable="false">https://raw.githubusercontent.com/knyplaygrnd/PixelOS-OTA/sixteen/CertifiedProps/certified_build_props.apk</string>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/Shaddowalker-26/Spes-ota/main/ota.json</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/Shaddowalker-26/Spes-ota/main/changelog.md</string>
 </resources>
