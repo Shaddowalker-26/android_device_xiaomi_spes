@@ -61,8 +61,8 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
 
     # Configure scheduler
-    write /proc/sys/kernel/sched_upmigrate "65 85"
-    write /proc/sys/kernel/sched_downmigrate "60 75"
+    write /proc/sys/kernel/sched_upmigrate "60 80"
+    write /proc/sys/kernel/sched_downmigrate "55 70"
     write /proc/sys/kernel/sched_group_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 75
     write /proc/sys/kernel/sched_min_task_util_for_boost 0
@@ -95,8 +95,8 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/iostats 1
 
     # Setup final cpu.uclamp
-    write /dev/cpuctl/top-app/cpu.uclamp.min 1
-    write /dev/cpuctl/foreground/cpu.uclamp.min 0
+    write /dev/cpuctl/top-app/cpu.uclamp.min 19
+    write /dev/cpuctl/foreground/cpu.uclamp.min 19
 
     # Set uclamp.max for some groups, which could indicate cpu importance used in scheduling
     write /dev/cpuctl/background/cpu.uclamp.max 13
@@ -152,7 +152,7 @@ on init
 
     # Set uclamp_min to capacity of little core + 1 to avoid little core
     write /dev/cpuctl/top-app/cpu.uclamp.min 19
-    write /dev/cpuctl/foreground/cou.uclamp.min 19
+    write /dev/cpuctl/foreground/cpu.uclamp.min 19
     write /dev/cpuctl/system-background/cpu.uclamp.min 19
 
     # Disable UFS powersaving
