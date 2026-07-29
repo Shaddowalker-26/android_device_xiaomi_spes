@@ -145,8 +145,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor \
-    libstdc++_vendor
+    libcamera2ndk_vendor 
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
@@ -181,8 +180,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan
 
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 PRODUCT_PACKAGES += \
     gralloc.qcom
@@ -349,8 +346,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service.lineage-libperfmgr \
-    libqti-perfd-client \
-    sendhint
+    libqti-perfd-client
 
 # Public libraries
 PRODUCT_COPY_FILES += \
