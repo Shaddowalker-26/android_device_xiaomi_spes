@@ -42,8 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-evolution-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-evolution-product.xml
 
-# Google Photos Pixel Exclusive XML
-PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
 
