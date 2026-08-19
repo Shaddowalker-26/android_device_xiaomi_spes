@@ -259,11 +259,6 @@ $(call soong_config_set_bool,libion,legacy_impl,true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# Kernel
-LOCAL_KERNEL := device/xiaomi/spes-kernel/Image
-PRODUCT_COPY_FILES += \
-	$(LOCAL_KERNEL):kernel
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
