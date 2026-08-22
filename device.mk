@@ -255,6 +255,8 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # IRQ
 PRODUCT_COPY_FILES += \
