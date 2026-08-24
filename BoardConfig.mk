@@ -229,3 +229,4 @@ include vendor/xiaomi/spes/BoardConfigVendor.mk
 
 WITH_DEXPREOPT := false
 
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/xiaomi/spes/sepolicy/private

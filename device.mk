@@ -476,8 +476,10 @@ $(call inherit-product, vendor/pixelos/pixel-clocks/common/common-vendor.mk)
 PRODUCT_PACKAGES += \
     SystemUIResPixelClocks
 
-PRODUCT_PACKAGES += \
-    OmniJaws
 
 # XiaomiParts
 include packages/apps/XiaomiParts/device.mk
+
+
+# Temporary: disable FCM kernel requirement enforcement.
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
