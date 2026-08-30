@@ -465,13 +465,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# Pixel Lockscreen Clocks
-PRODUCT_SOONG_NAMESPACES += vendor/pixelos/pixel-clocks
-$(call inherit-product, vendor/pixelos/pixel-clocks/products/clocks.mk)
-$(call inherit-product, vendor/pixelos/pixel-clocks/common/common-vendor.mk)
 
-PRODUCT_PACKAGES += \
-    SystemUIResPixelClocks
 
 
 # XiaomiParts
