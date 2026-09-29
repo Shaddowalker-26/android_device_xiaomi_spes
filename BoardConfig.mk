@@ -221,6 +221,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 include vendor/xiaomi/spes/BoardConfigVendor.mk
 
-WITH_DEXPREOPT := false
-
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/xiaomi/spes/sepolicy/private
